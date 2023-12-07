@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME</title>
+  
+</head>
+
+<style>
+
+/* Header Styling */
+header{
+  width:  100%;
+  background-image: url(img1/2a.jpg);
+  padding-left: 50px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-style: oblique;
+}
+
+/* Body Styling */
+body {
+  background-image: url(img1/2a.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Logo Styling */
+.logo{
+  width: 70px;
+  border-radius: 50%;
+}
+
+
+.me{
+  font-size: 25px;
+  padding-right: 610px;
+  color: #df4881;
+  font-style: oblique;
+}
+
+/* Navigation Styling */
+nav ul li {
+  display: inline;
+  border-radius: -30%;
+  font-size: 30px;
+  transition: transform 0.3s ease;
+}
+
+nav ul li a {
+  max-width: 800px;
+	font-size: 30px;
+  color: yellow;
+  text-decoration: none;
+}
+           
+nav ul li a:hover {
+  background-color: rgba(168, 207, 207, 0.685);
+}
+
+ul li a {
+  text-align: center;
+  margin-right: 50px;
+}
+
+/* Global Styling */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Container Styling */
+nav{
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
+
+/* Container Styling */
+#container{
+	background: white;
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5em auto;
+	height: 400px;
+	width: 900px;
+  margin-left: 200px;
+  margin-top: 100px;	
+}
+
+/* Product Details Styling */
+.product-details {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 40%;
+}
+
+/* Product Details Heading Styling */
+#container .product-details h1{
+	font-family: 'Bebas Neue', cursive;
+	display: inline-block;
+	position: relative;
+	font-size: 30px;
+	color: #344055;
+	margin: 0;	
+}
+
+/* Product Details Heading Pseudo-element Styling */
+#container .product-details h1:before{
+	position: absolute;
+	content: '';
+	right: 0%; 
+	top: 0%;
+	transform: translate(25px, -15px);
+	font-family: 'Bree Serif', serif;
+	display: inline-block;
+	background: #ffe6e6;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 5px;
+	color: white;
+	margin: 0;
+	animation: chan-sh 6s ease infinite;
+}
+
+/* Product Details Paragraph Styling */
+#container .product-details > p {
+font-family: 'EB Garamond', serif;
+	text-align: center;
+	font-size: 18px;
+	color: #7d7d7d;
+}
+
+/* Control Styling */
+.control{
+	position: absolute;
+	bottom: 20%;
+	left: 22.8%;
+	
+}
+
+/* Button Styling */
+.btn {
+	transform: translateY(0px);
+	transition: 0.3s linear;
+	background:  #809fff;
+	border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	color: #eee;
+	padding: 0;
+	margin: 0;
+}
+
+/* Button Hover Styling */
+.btn:hover{transform: translateY(-6px);
+	background: #1a66ff;}
+
+/* Button Span Styling */
+.btn span {
+	font-family: 'Farsan', cursive;
+	transition: transform 0.3s;
+	display: inline-block;
+  padding: 10px 20px;
+	font-size: 1.2em;
+	margin:0;
+}
+
+/* Button Price Styling */
+.btn .price, .shopping-cart{
+	background: #333;
+	border: 0;
+	margin: 0;
+}
+
+.btn .price {
+	transform: translateX(-10%); padding-right: 15px;
+}
+
+.btn .shopping-cart {
+	transform: translateX(-100%);
+  position: absolute;
+	background: #333;
+	z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.btn .buy {z-index: 3; font-weight: bolder;}
+
+
+/* Button Price Styling on Hover */
+.btn:hover .price {transform: translateX(-110%);}
+
+/* Button Shopping Cart Styling on Hover */
+.btn:hover .shopping-cart {transform: translateX(0%);}
+
+/* Product Image Styling */
+.product-image {
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	float: right;
+	width: 45%;
+	display: inline-block;
+}
+
+/* Container Image Styling */
+#container img {width: 100%;height: 100%;}
+
+/* Information Styling */
+.info {
+    background: rgba(27, 26, 26, 0.9);
+    font-family: 'Bree Serif', serif;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.8;
+    text-align: left;
+    font-size: 105%;
+    cursor: no-drop;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+/* Information Heading 2 Styling */
+.info h2 {text-align: center}
+
+/* Product Image Hover Styling */
+.product-image:hover .info{transform: translateX(0);}
+
+/* Information List Item Styling */
+.info ul li{transition: 0.3s ease;}
+
+/* Information List Item Hover Styling */
+.info ul li:hover{transform: translateX(50px) scale(1.3);}
+
+/* Product Image Hover Styling for Image */
+.product-image:hover img {transition: all 0.3s ease-out;}
+.product-image:hover img {transform: scale(1.2, 1.2);}
+
+/* Resetting Box Model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Main Section Styling */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cards Styling */
+.cards {
+  display: grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+/* Cards Item Styling */
+.cards_item {
+  display: flex;
+  padding: 1rem;
+  width: 400px;
+  height: 750px;
+ margin-left: 0px;
+}
+
+/* Card Image Styling */
+.card_image {
+  height: calc(13*1.2rem);
+  padding: 1.2rem 1.2rem 0;
+  position:relative;
+}
+
+/* Card Image Pseudo-elements Styling */
+.card_image:before,
+.card_image:after{
+  content: "";
+  position: absolute;
+  width: 20px;
+  left: 60%;
+  top: 0;
+  height: 45px;
+  transform: rotate(45deg);
+}
+
+/* Card Image After Pseudo-element Styling */
+.card_image:after{
+  transform: rotate(-45deg);
+  top:auto;
+  bottom:-22px;
+  left:40%;
+}
+
+/* Card Image Image Styling */
+.card_image img {
+  width:100%;
+  height:70%;
+  object-fit:cover;
+}
+
+/* Cards Item Styling with Drop Shadow */
+.cards_item {
+  filter:drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
+  height: 100%;
+}
+
+/* Card Styling */
+.card {
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-left: 30px;
+  background: repeating-linear-gradient(#0000 0 calc(1.2rem - 1px),#66afe1 0 1.2rem) right bottom /100% 100%,linear-gradient(red 0 0) 30px 0/2px 100% #fff;
+  background-repeat: no-repeat;
+  line-height: 1.2rem;
+  -webkit-mask:radial-gradient(circle .8rem at 2px 50%,#0000 98%,#000)0 0/100% 2.4rem;
+}
+
+/* Card Content Styling */
+.card_content {
+  padding: 1.2rem;
+}
+
+/* Card Title and Paragraph Styling */
+h2.card_title,p {
+  margin: 1.2rem 0;
+}
+
+/* Card Title Styling */
+h2.card_title {
+    font-size: 1.3em;
+}
+
+/* Body Font Family Styling */
+body {
+  font-family:monospace;
+}
+
+/* HTML Font Size Styling */
+html {
+  font-size:15px;
+}
+
+/* Section Styling */
+.jj{
+  text-align: center;
+  color: yellow;
+  font-size: 30px;
+  font-style: oblique;
+}
+
+/* Footer Styling */
+  footer {
+    background-image: url(img1/2a.jpg);
+    
+  /* Neon Styling */
+    .neons {
+    margin-top: 0rem;
+    text-align: center;
+    margin-left: 560px;
+  }
+
+  /* Neon Heading 1 Styling */
+  .neons h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  /* Keyframes for Glow Animation */
+  @-webkit-keyframes glow {
+      from {
+        color: #fff;
+      text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+    }
+    
+    to {
+      color: gray;
+      text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+    }
+  }
+  }
+
+  /* Neon Container Styling */
+  .neons {
+    margin-top: 0rem;
+    text-align: center;
+  }
+
+/* Neon Heading 1 Styling */
+  .neons h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-right: 550px;
+    font-weight: bold;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  /* Keyframes for Glow Animation */
+  @-webkit-keyframes glow {
+      from {
+        color: #fff;
+      text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+    }
+    
+    to {
+      color: gray;
+      text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+    }
+  }
+
+  /* Font Face Styling */
+  @font-face {
+  font-family: Clip;
+  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+}
+
+/* Sign Styling */
+.sign {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 50%;
+  background-image: radial-gradient(
+    ellipse 50% 35% at 50% 50%,
+    #6b1839,
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 22%;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 3em;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+/* Keyframes for Blink Animation */
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+}
+
+/* Flicker Animation Styling */
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+/* Fast Flicker Animation Styling */
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+/* Keyframes for Shine Animation */
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+}
+
+/* Keyframes for Flicker Animation */
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+</style>
+
+
+<body>
+
+<!-- Header Section -->
+<header>
+  <nav>
+    <img src="img1/logo.jpg" class="logo"> <div class="container">
+    <div class="row">
+           <div class="neons col-12">
+              <h1><em>jtorrs</em></h1>
+           </div>
+        </div>
+    </div>
+      <ul>
+      <li><a href="index.html"><b> HOME </b></a></li>
+      <li><a href="IT III.html"><b>IT111-BLOGS</b></a></li>
+      <li><a href="Flex.html"><b>FLEX</b></a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Introduction Section --> 
+<div class="sign">
+  <span class="fast-flicker">A</span>ll<span class="flicker">&nbsp;L</span>esson
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Chapter Sections -->
+<!-- Chapter I -->
+  <div id="container">	
+    <div class="product-details">
+      <h1>CHAPTER I: INTRODUCTION TO COMPUTING</h1>
+    <div class="control">
+  </div>
+</div>
+<div class="product-image">
+  <img src="img1/6d.jpg" alt="">
+    <div class="info">
+     <h2> My Learned of this lesson</h2>
+        <ul>
+          <li>&nbsp; I learned of this lesson is all about the timeline of all ERA like MECHANICAL ERA, VACUUM TUBES ERA and etc.. I learned all of their sizes and uses on the time that they are alive. </li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div id="container">	
+    <div class="product-details">
+      <h1>CHAPTER II: PROFESSIONS &
+        CAREERS IN COMPUTING</h1>
+    <div class="control">
+  </div>
+</div>
+<div class="product-image">
+  <img src="img1/6d.jpg" alt="">
+    <div class="info">
+      <h2> My Learned of this lesson</h2>
+        <ul>
+          <li>&nbsp; I learned of this lesson is to know what career opportunities you can enter as a graduates of computer-related courses like system analyst, system consultant, softare engineer and etc.. </li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div id="container">	
+    <div class="product-details">
+      <h1>CHAPTER III:
+        INFORMATION PROCESSING CYCLE</h1>
+    <div class="control">
+  </div>
+</div>
+<div class="product-image">
+  <img src="img1/6d.jpg" alt="">
+    <div class="info">
+      <h2> My Learned of this lesson</h2>
+      <ul>
+        <li>&nbsp;I learned of this lesson is all about of what is the defference between DATA and INFORMATION. DATA is the organized and systematic manipulation of
+          information or data to convert it into a more useful form and INFORMATION is a sequence of events consisting of Input, Processing, and Storage &
+          Output.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div id="container">	
+    <div class="product-details">
+      <h1>CHAPTER IV:
+        INTRODUCTION TO COMPUTER
+        SYSTEMS</h1>
+    <div class="control">
+  </div>
+</div>
+<div class="product-image">
+  <img src="img1/6d.jpg" alt="">
+    <div class="info">
+      <h2> My Learned of this lesson</h2>
+        <ul>
+          <li>&nbsp;Because of this lesson I alredy know and learned that their are 4 COMPUTER COMPONENTS IN A
+            COMPUTER SYSTEM the HARDWARE, SOFTWARE, PEAPLO WARE, and DATA WARE</li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div id="container">	
+    <div class="product-details">
+      <h1>CHAPTER V:
+        BASIC CONCEPT OF COMPUTER
+        SECURITY</h1>
+    <div class="control">
+  </div>
+</div>
+<div class="product-image">
+  <img src="img1/6d.jpg" alt="">
+   <div class="info">
+      <h2> My learned of this lesson</h2>
+      <ul>
+        <li>&nbsp;Because of this lesson now I know what is DATA SECURIT and CLASSIFYING INFORMATION. DATA SECURITY just like for example Sayo’s partners have asked for some project related data that is
+          contained in a confidential report. They need the data immediately
+          and have asked Sayo to e-mail it to them. Sayo has already taken
+          steps to ensure that no personal data is involved, so the data
+          protection rules are not applicable and CLASSIFYING INFORMATION their are 4 part to classify information the Public,Internal, confidential, and Restricted.  </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div id="container">	
+    <div class="product-details">
+      <h1>CHAPTER VI: Basic HTML and CSS</h1>
+    <div class="control">
+  </div>
+</div>
+<div class="product-image">
+  <img src="img1/6d.jpg" alt="">
+    <div class="info">
+     <h2> My Learned of this lesson</h2>
+        <ul>
+          <li>&nbsp; Chapter VI is the part that I learned about the basic of HTML and CSS, and this is the reason why now I can make and code my major requirements. </li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Similar sections for Chapter II, III, IV, V, VI -->
+<!-- Challenging Lesson Section -->
+<div class="jj">
+  <p> A lesson that challenged me the most </P>
+</div>
+
+<!-- Main Content Section -->
+<div class="main">
+  <ul class="cards">
+
+     <!-- Card 1 -->
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="img1/9d.png" alt="mixed vegetable salad in a mason jar. "></div>
+          <div class="card_content">
+          <h2 class="card_title">Major Output </h2>
+          <div class="card_text">
+          <p>It is because of I don't have a High in Laptop to make my major requirements because my Laptop right now is so lag.
+            And also my internet is so poor, I can experience a high and fast internet if I'm on the library so this is one of lesson that challenged me the most.
+          </p>
+      </div>
+    </div>
+  </div>
+</li>
+
+<li class="cards_item">
+  <div class="card">
+    <div class="card_image"><img src="img1/10d.png" alt="a Reuben sandwich on wax paper. "></div>
+      <div class="card_content">
+        <h2 class="card_title">Chapter II: Profession & careers in computing</h2>
+          <div class="card_text">
+            <p>Why chapter II? It is because it make me overthink of what career that I going to pursue in the future, because of their is allot of Professions & careers in computing
+              and thats why it's make me overthink and challenged me the most.   </p>
+      </div>
+    </div>
+  </div>
+</li>
+
+<li class="cards_item">
+  <div class="card">
+    <div class="card_image"><img src="img1/11d.png" alt="A side view of a plate of figs and berries. "></div>
+      <div class="card_content">
+        <h2 class="card_title">Chapter VI: Basic HTML & CSS</h2>
+          <div class="card_text">
+            <p> Chapter VI also make me challenged it is because the chapter VI is the part that you can learned about the basic of HTML and CSS. Why I challenged in chapter VI? It is because of my personality that a slow learner person in all lesson that I encounter and thats make me struggle and challenged me the most.  </p>
+          </div>
+        </div>
+      </div>
+    </li>
+     <!-- Similar sections for Card 2, 3, ... -->
+  </ul>
+</div>
+
+</body>
+
+<!-- Footer Section -->
+<footer>
+
+  <p class="footer-text"></p><div class="container">
+    <div class="row">
+       <div class="neons col-12">
+          <h1><em>&copy;jovanietorregosa 2023</em></h1>
+       </div>
+    </div>
+ </div>
+
+</footer>
+
+</html>

@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME</title>
+  
+</head>
+
+<style>
+ 
+/* Styling for the body element */ 
+body {
+  background-image: url(img1/2a.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Styling for the header element */
+header{
+  width:  100%;
+  background-image: url(img1/2a.jpg);
+  padding-left: 50px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-style: oblique;
+}
+
+/* Styling for the logo */
+.logo{
+  width: 70px;
+  border-radius: 50%;
+}
+
+/* Styling for the "me" class */
+.me{
+  font-size: 25px;
+  padding-right: 610px;
+  color: #df4881;
+  font-style: oblique;
+}
+
+/* Styling for navigation list items */
+nav ul li {
+  display: inline;
+  border-radius: -30%;
+  font-size: 30px;
+  transition: transform 0.3s ease;
+}
+
+/* Styling for navigation links */
+nav ul li a {
+  max-width: 800px;
+	font-size: 30px;
+  color: yellow;
+  text-decoration: none;
+}
+
+/* Styling for navigation links on hover */
+nav ul li a:hover {
+  background-color: rgba(168, 207, 207, 0.685);
+}
+
+/* Styling for unordered list items */
+ul li a {
+  text-align: center;
+  margin-right: 55px;
+}
+
+/* Resetting default styles for all elements */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for the navigation bar */
+nav{
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styling for the "side" class */
+.side {
+				display: flex;
+				align-items: center;
+				justify-content : center;
+				font-size: 40px;
+				color: white;
+				font-style: oblique;
+}
+
+/* Styling for the container class */
+.container {
+				max-width: 700px;
+				margin-top: 200px;
+        margin-bottom: 50px;
+				padding-left: 100px;
+				padding-right: 100px;
+				box-shadow: 0 0 5px;
+				text-align: center;
+				font-size: 20px;
+				border-radius: 400px;
+			}
+
+/* Styling for the "side1" class */
+			.side1 {
+				text-align: center;
+				border-radius: 50%;
+     		}
+
+/* Styling for images inside "side1" class */
+     		.side1 img{
+				border-radius: 10%;
+				margin: 0 40px;
+				position: relative;
+			}
+
+/* Styling for paragraph with class "p1" */      
+   	 		p1 {
+				color: yellow;
+			}
+
+/* Styling for paragraph with class "p2" */
+			p2 {
+				color: aqua;
+			}
+
+/* Styling for ordered list */
+			ol {
+				text-align: left;
+				color: aqua;
+				margin: 0 90px;
+			}
+
+/* Styling for the footer */      
+  footer {
+    background-image: url(img1/2a.jpg);
+
+/* Styling for the neon text in the footer */
+    .neons {
+    text-align: center;
+    margin-left: 560px;
+    bottom: 0px;
+    
+  }
+  .neons h1 {
+    font-size: 2rem;
+   
+    font-weight: bold;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+/* Keyframes for glowing effect */  
+  @-webkit-keyframes glow {
+      from {
+        color: #fff;
+      text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+    }
+    
+    to {
+      color: gray;
+      text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+    }
+  }
+  }
+
+/* Additional styling for neon text in the footer */  
+  .neons {
+    margin-top: 0rem;
+    text-align: center;
+  }
+
+  .neons h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-right: 550px;
+    font-weight: bold;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+/* Keyframes for glowing effect */  
+  @-webkit-keyframes glow {
+      from {
+        color: #fff;
+      text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+    }
+    
+    to {
+      color: gray;
+      text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+    }
+  }
+
+/* Additional styling for neon text in the footer */  
+  @font-face {
+  font-family: Clip;
+  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+}
+
+/* Styling for the "sign" class */
+.sign {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 50%;
+  background-image: radial-gradient(
+    ellipse 50% 35% at 50% 50%,
+    #6b1839,
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 20%;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 3em;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+
+/* Keyframes for blink effect */
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+}
+
+/* Styling for the "flicker" class */
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+/* Styling for the "fast-flicker" class */
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+/* Keyframes for shine effect */
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+}
+
+/* Keyframes for flicker effect */
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Styling for the 'b' class - positioned element with flickering text effect */
+.b {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 50%;
+  background-image: radial-gradient(
+    ellipse 50% 35% at 50% 50%,
+    #6b1839,
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 70%;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 3em;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+/* Keyframe animations for text blinking and shining effects */
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Video styling */
+video{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 13%;
+}
+
+/* Text styling */
+.tex{
+  text-align: center;
+  margin-top: 3%;
+  color: white;
+  font-style: oblique;
+  color: yellow;
+}
+ 
+/* Styling for the 'te' class */
+.te{
+  margin-top: 9%;
+  color: white;
+  text-align: center;
+}
+
+/* Styling for the 'T' class */
+.T{
+ text-align: center;
+  margin-bottom: 3%;
+  color: white;
+  color: yellow;
+}
+
+</style>
+
+
+<body>
+
+<!-- Header section -->
+<header>
+<!-- Navigation bar with logo -->
+  <nav>
+    <img src="img1/logo.jpg" class="logo"> <div class="">
+      <div class="row">
+         <!-- Neon text in the header -->
+          <div class="neons col-12">
+            <h1><em>jtorrs</em></h1>
+          </div>
+      </div>
+    </div>
+    <!-- Navigation links -->
+      <ul>
+        <li><a href="index.html"><b> HOME </b></a></li>
+        <li><a href="IT III.html"><b>IT111-BLOGS</b></a></li>
+        <li><a href="Flex.html"><b>FLEX</b></a></li>
+      </ul>
+  </nav>
+</header>
+
+<!-- "About Me" section -->
+<div class="sign">
+  <span class="fast-flicker">A</span>bout<span class="flicker">&nbsp;M</span>e
+</div>
+
+<!-- "Likes and Dislikes" section -->
+<div class="b">
+  <span class="fast-flicker">MY</span>&nbsp;"LIKES"<span class="flicker">&nbsp;AND</span>&nbsp;"DISLIKES"
+</div>
+
+<!-- Text about yourself section -->
+<div class="te">
+  <h1>I am a person that love people who true to me and I like people that <br> have a same vibe as me and people that talkative. I am a mama's boy <br>Hehehe, and also about my talent I can play guitar, and I love <br>basketball also and I love exercise in the morning.</h1>
+</div>
+
+<!-- "Likes and Dislikes" list section -->
+<div class="side">
+  <div class="container">
+    <p1 style="font-size: 50px;"> LIKES </p1>
+      <ol style="font-size: 40px;">
+      <li> Exercise     </li>
+      <li> Sleeping     </li>
+      <li> Basketball   </li>
+      <li> Online Games </li>
+    </ol>
+</div>
+
+<div class="container">
+  <p1 style="font-size: 50px;"> DISLIKES </p1>
+    <ol style="font-size: 40px;">
+      <li> Vices        </li>
+      <li> Red Flag     </li>
+      <li> My Attitude  </li>
+      <li> Quiet Person </li>
+    </ol>
+  </div>
+</div>
+
+<!-- "Myself 8 Years from Now" section -->
+<div class="tex">
+  <h1>MYSELF 8 YEAR'S FROM NOW :)</h1>
+</div>
+
+<!-- Video section -->
+<div class="video">
+  <video width="1000" height="500" controls>
+    <source src="img1/vid.mp4" type="video/mp4">
+  </video>
+</div>
+
+<!-- "Future Self" text section -->
+<div class="T">
+  <h1>The video above shows that 8 years from now i'm <br>gonna be a programmer like a "software engineer".</h1>
+</div>
+
+</body>
+
+<!-- Footer section -->
+<footer>
+  <!-- Footer text -->
+
+<p class="footer-text"></p>
+  <div class="row">
+    <!-- Neon text in the footer -->
+    <div class="neons col-12">
+      <h1><em>&copy;jovanietorregosa 2023</em></h1>
+    </div>
+  </div>
+</div>
+  
+</footer>
+
+</html>

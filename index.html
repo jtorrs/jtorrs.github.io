@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME</title>
+  
+</head>
+
+<style>
+
+/* Header styles */
+header{
+  width:  100%;
+  background-image: url(img1/2a.jpg);
+  padding-left: 50px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-style: oblique;
+}
+
+/* Logo styles */
+.logo{
+  width: 70px;
+  border-radius: 50%;
+}
+
+/* Personal information styles */
+.me{
+  font-size: 25px;
+  padding-right: 610px;
+  color: #df4881;
+  font-style: oblique;
+}
+
+/* Navigation list styles */
+nav ul li {
+  display: inline;
+  border-radius: -30%;
+  font-size: 30px;
+  transition: transform 0.3s ease;
+}
+
+/* Navigation link styles */
+nav ul li a {
+  max-width: 800px;
+	font-size: 30px;
+  color: yellow;
+  text-decoration: none;
+}
+
+/* Navigation link hover effect */
+nav ul li a:hover {
+  background-color: rgba(168, 207, 207, 0.685);
+}
+
+/* List item link styles */
+ul li a {
+  text-align: center;
+  margin-right: 50px;
+}
+
+/* Global styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hero section styles */
+.hero{
+  width: 100%;
+  min-height: 90vh;
+  background-image: url(img1/2a.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 5px 5%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Navigation styles */
+nav{
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Button styles */
+.btn{
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 40px;
+  color: #fff;
+  background-image: linear-gradient(45deg, rgb(255, 81, 0), rgb(255, 81, 0));
+  font-size: 14px;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  transition: 0.5s;
+  margin-bottom: 10px;
+}
+
+/* Content section styles */
+.content{
+  margin-top: 0%;
+  max-width: 600px;
+}
+
+/* Heading styles */
+.content h1{
+  font-size: 70px;
+  color: yellow;
+  font-style: oblique;
+}
+
+/* Paragraph styles */
+.content p{
+  margin: 10px 0 30px;
+  color: orange;
+  animation-delay: 0.5s;
+  font-style: oblique;
+}
+
+/* Button in the content section styles */
+.content .btn{
+  padding: 15px 80px;
+  font-size: 16px;
+  animation-delay: 1s;
+}
+
+/* Button hover effect */
+.btn:hover{
+    border-top-right-radius: 30px;
+}
+
+/* Feature image styles */
+.feature-img{
+  width: 530px;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+
+/* Animated feature image */
+.feature-img.anim{
+  animation-delay: 1.5s;
+}
+
+/* Animation styles */
+.anim{
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+}
+
+/* Moveup animation */
+@keyframes moveup{
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* Side1 image styles */
+.side1 img{
+    border-radius: 40%;
+    
+  }
+
+/* Footer styles */
+  footer {
+    background-image: url(img1/2a.jpg);
+  
+    /* Neon text styles */
+    .neons {
+    margin-top: 0rem;
+    text-align: center;
+    margin-left: 560px;
+  }
+
+  .neons h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  
+/* Keyframes for neon glow effect */
+  @-webkit-keyframes glow {
+      from {
+        color: #fff;
+      text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+    }
+    
+    to {
+      color: gray;
+      text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+    }
+  }
+  }
+
+ /* Neon text styles */
+  .neons {
+    margin-top: 0rem;
+    text-align: center;
+  }
+
+  /* Neons h1 text style*/
+  .neons h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-right: 550px;
+    font-weight: bold;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  /* Keyframes for neon glow effect */
+  @-webkit-keyframes glow {
+      from {
+        color: #fff;
+      text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+    }
+    
+    to {
+      color: gray;
+      text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+    }
+  }
+
+</style>
+
+
+<body>
+
+    <!-- Header section -->
+    <header>
+      <!-- Navigation bar with logo -->
+      <nav>
+        <img src="img1/logo.jpg" class="logo">
+        <div class="container">
+          <div class="row">
+            <!-- Neon text -->
+            <div class="neons col-12">
+              <h1><em>jtorrs</em></h1>
+            </div>
+          </div>
+        </div>
+        <!-- Navigation links -->
+        <ul>
+          <li><a href="index.html"><b> HOME </b></a></li>
+          <li><a href="IT III.html"><b>IT111-BLOGS</b></a></li>
+          <li><a href="Flex.html"><b>FLEX</b></a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- Hero section -->
+    <div class="hero">
+      <div class="content">
+        <!-- Main heading and introduction -->
+        <h1 class="anim"><br>IT 111 <br>INTRO TO COMPUTING<br>FINAL OUTPUT</h1>
+        <p class="anim">CLICK "ABOUT ME" TO KNOW ABOUT MYSELF </p>
+        <!-- Button linking to About Me page -->
+        <a href="About Me.html" class="btn anim">About Me</a>
+      </div>
+    
+      <!-- Feature image -->
+      <img src="img1/5d.png" class="feature-img anim">
+      
+      <!-- Social media icons -->
+      <div class="side1">	
+        <a href="https://www.youtube.com/">
+          <img src="img1/1c.png" style="height: 40px; margin-left: 1px;">
+        </a>
+        <a href="https://web.facebook.com/J6torrs"> 
+          <img src="img1/1b.png" style="height: 40px;margin-left: 50px;">
+        </a>
+        <a href="https://www.instagram.com/torregosajovanie/?hl=en"> 
+          <img src="img1/1a.jpg" style="height: 40px;margin-left: 50px;"> 
+        </a>
+      </div>
+    </div>
+    
+    </body>
+    
+    <!-- Footer section -->
+    <footer>
+      <!-- Footer text -->
+      <p class="footer-text"></p>
+      <div class="container">
+        <div class="row">
+          <!-- Neon text in the footer -->
+          <div class="neons col-12">
+            <h1><em>&copy;jovanietorregosa 2023</em></h1>
+          </div>
+        </div>
+      </div>
+      
+    </footer>
+</html>
